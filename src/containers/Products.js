@@ -4,8 +4,7 @@ import ProductItem from '../components/Products/ProductItem';
 import { ProductsContext } from '../context/products-context';
 import './Products.css';
 
-const Products = props => {
-  // const productList = useSelector(state => state.shop.products);
+const Products = () => {
   const productList = useContext(ProductsContext).products;
   return (
     <ul className='products-list'>
