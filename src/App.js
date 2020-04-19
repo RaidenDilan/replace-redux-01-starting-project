@@ -10,8 +10,13 @@ const App = props => {
     <React.Fragment>
       <Navigation />
       <main>
-        <Route path="/" component={ProductsPage} exact />
-        <Route path="/favorites" component={FavoritesPage} />
+        <Route
+          path='/'
+          component={ ProductsPage }
+          exact />
+        <Route
+          path='/favorites'
+          component={ FavoritesPage } />
       </main>
     </React.Fragment>
   );

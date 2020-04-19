@@ -13,15 +13,14 @@ const ProductItem = props => {
   };
 
   return (
-    <Card style={{ marginBottom: '1rem' }}>
-      <div className="product-item">
-        <h2 className={props.isFav ? 'is-fav' : ''}>{props.title}</h2>
-        <p>{props.description}</p>
+    <Card style={ { marginBottom: '1rem' } }>
+      <div className='product-item'>
+        <h2 className={ props.isFav ? 'is-fav' : '' }>{ props.title }</h2>
+        <p>{ props.description }</p>
         <button
-          className={!props.isFav ? 'button-outline' : ''}
-          onClick={toggleFavHandler}
-        >
-          {props.isFav ? 'Un-Favorite' : 'Favorite'}
+          className={ !props.isFav ? 'button-outline' : '' }
+          onClick={ toggleFavHandler }>
+          { props.isFav ? 'Un-Favorite' : 'Favorite' }
         </button>
       </div>
     </Card>

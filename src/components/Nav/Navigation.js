@@ -5,14 +5,16 @@ import './Navigation.css';
 
 const Navigation = props => {
   return (
-    <header className="main-header">
+    <header className='main-header'>
       <nav>
         <ul>
           <li>
-            <NavLink to="/" exact>All Products</NavLink>
+            <NavLink
+              to='/'
+              exact>All Products</NavLink>
           </li>
           <li>
-            <NavLink to="/favorites">Favorites</NavLink>
+            <NavLink to='/favorites'>Favorites</NavLink>
           </li>
         </ul>
       </nav>
